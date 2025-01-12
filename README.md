@@ -1,2 +1,2 @@
-# EaglerLauncher # <img src=".github/assets/Glasses.png"
+# EaglerLauncher <img src=".github/assets/Glasses.png"
 Like Jibbits
