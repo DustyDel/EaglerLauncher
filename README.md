@@ -1,2 +1,2 @@
-# <img src=".github/assets/Glasses.png"
+# <img src="./assets/Glasses.png"
 Like Jibbits
