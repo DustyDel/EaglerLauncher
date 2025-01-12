@@ -1,2 +1,1 @@
-# <img src="/assets/Glasses.png"
-Like Jibbits
+# <img src=".Assets/blank/Glasses.png" alt="Glasses"
