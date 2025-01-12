@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Launcher</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+        }
+        .launcher {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header {
+            background-color: #2b2b2b;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #3d3d3d;
+        }
+        .header .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .profile {
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .nav {
+            display: flex;
+            background-color: #2b2b2b;
+            border-bottom: 2px solid #3d3d3d;
+        }
+        .nav a {
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: background-color 0.2s;
+        }
+        .nav a:hover {
+            background-color: #3d3d3d;
+        }
+        .main {
+            flex: 1;
+            display: flex;
+        }
+        .content {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #2e2e2e;
+        }
+        .content h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .content p {
+            margin: 15px 0;
+            font-size: 18px;
+            color: #cfcfcf;
+            text-align: center;
+        }
+        .content .play-button {
+            margin-top: 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .content .play-button img {
+            width: 200px;
+            height: auto;
+        }
+        .content .play-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="launcher">
+        <div class="header">
+            <div class="title">Minecraft Launcher</div>
+            <div class="profile">Profile: Player123</div>
+        </div>
+        <div class="eagler-edition" style="background-color: #2b2b2b; text-align: left; padding: 5px 20px; font-size: 14px; font-weight: normal; color: white;">
+            Minecraft: Eagler Edition
+        </div>
+        <div class="nav">
+            <a href="#">Play</a>
+            <a href="#">Installations</a>
+            <a href="#">Realms</a>
+            <a href="#">Skins</a>
+            <a href="#">Patch Notes</a>
+        </div>
+        <div class="main">
+            <div class="content">
+                                <h1>Welcome to Minecraft</h1>
+                <p>Experience the ultimate sandbox adventure. Choose your path, explore, and build your world!</p>
+                <button class="play-button">
+                    <img src="play-button.png" alt="Play">
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
