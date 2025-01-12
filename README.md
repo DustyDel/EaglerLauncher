@@ -1,1 +1,1 @@
-<img src=".Assets/Glasses.png" alt="Glasses"><br>
+<img src=".Assets/blank/Glasses.png" alt="Glasses"><br>
