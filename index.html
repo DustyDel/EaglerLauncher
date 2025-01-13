@@ -52,14 +52,12 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px;
-            background-color: #2e2e2e;
+            position: relative;
         }
         .logo-container {
             text-align: center;
             margin-top: 20px;
+            z-index: 2;
         }
         .logo-container img {
             width: 100%;
@@ -68,7 +66,10 @@
         }
         .content {
             text-align: center;
-            margin-top: 20px;
+            z-index: 3;
+            position: absolute;
+            bottom: 100px; /* Adjust to position buttons above the image */
+            width: 100%;
         }
         .content h1 {
             font-size: 32px;
@@ -79,16 +80,6 @@
             font-size: 18px;
             color: #cfcfcf;
             margin-bottom: 20px;
-        }
-        .version-image {
-            margin: 20px 0;
-        }
-        .version-image img {
-            width: 100%;
-            max-width: 1000px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
         .play-button {
             border: none;
@@ -102,6 +93,16 @@
         }
         .play-button:hover {
             transform: scale(1.05);
+        }
+        .background-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            z-index: 1;
+            background: url('images/banner1.png') no-repeat center center;
+            background-size: cover;
         }
     </style>
 </head>
@@ -126,11 +127,10 @@
             <div class="logo-container">
                 <img src="images/minecraft_title1.20.png" alt="Minecraft Logo">
             </div>
-            <!-- Version Info Section -->
+            <!-- Background Version Info Section -->
+            <div class="background-image"></div>
+            <!-- Content (Play Button) -->
             <div class="content">
-                <div class="version-image">
-                    <img src="images/banner1.png" alt="Version Info">
-                </div>
                 <button class="play-button">
                     <img src="images/play.png" alt="Play">
                 </button>
