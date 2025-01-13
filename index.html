@@ -67,9 +67,9 @@
         }
         .content {
             text-align: center;
-            z-index: 5; /* Higher than footer to bring the play button to the front */
+            z-index: 3;
             position: absolute;
-            bottom: 70px; /* Lower position closer to footer */
+            bottom: 50px; /* Lowered the play button */
             width: 100%;
         }
         .content h1 {
@@ -117,7 +117,26 @@
             align-items: center;
             color: white;
             font-size: 16px;
-            z-index: 4; /* Ensure footer is below play button */
+            z-index: 4; /* Ensure it appears above other elements */
+        }
+        .sidebar {
+            width: 100px; /* Adjust width of the sidebar */
+            height: 100%; /* Full height */
+            background-color: #3d3d3d;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 16px;
+            z-index: 4; /* Ensure it appears above other elements */
+        }
+        .sidebar-item {
+            margin: 15px 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -138,6 +157,12 @@
             <a href="#">Patch Notes</a>
         </div>
         <div class="main">
+            <!-- Sidebar Section -->
+            <div class="sidebar">
+                <div class="sidebar-item">Menu 1</div>
+                <div class="sidebar-item">Menu 2</div>
+                <div class="sidebar-item">Menu 3</div>
+            </div>
             <!-- Title Logo Section -->
             <div class="logo-container">
                 <img src="images/minecraft_title1.20.png" alt="Minecraft Logo">
